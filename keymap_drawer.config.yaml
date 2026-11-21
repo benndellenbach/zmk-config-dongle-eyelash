@@ -1,0 +1,243 @@
+draw_config:
+  n_columns: 1
+  draw_key_sides: true
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 28.0
+  combo_h: 26.0
+  key_rx: 6.0
+  key_ry: 6.0
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 40.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: true
+  small_pad: 2.0
+  dark_mode: auto
+  svg_extra_style: |
+    svg.keymap {
+      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+      font-size: 12px;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+    }
+    rect.held, rect.combo.held { fill: #ffc; }
+    .sym_sub_text.tap { translate: -5px 2px; font-size: 20px; }
+    .sym_sub_text.shifted { translate: 10px 13px; font-size: 10px; opacity: 1.0; }
+    .combo.sym_sub_text.tap { translate: -1px 1px; }
+    .combo.sym_sub_text.shifted { translate: 7px 5px; font-size: 10px; opacity: 1.0; }
+    .toggle.shifted { translate: -10px 12px; }
+    .toggle.hold { translate: 13px -23px; }
+
+  shrink_wide_legends: 6
+  glyph_tap_size: 18
+  glyph_hold_size: 15
+  glyph_shifted_size: 15
+  glyphs: {}
+  glyph_urls:
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+
+parse_config:
+  mark_alternate_layer_activators: true
+  sticky_label: $$mdi:gesture-tap-hold$$
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  raw_binding_map:
+    # Layer-taps (keymap-drawer expands the layer #defines to numbers)
+    "&lt 7 TAB":
+      tap: $$mdi:keyboard-tab$$
+      hold: Sym
+    "&lt 3 SPACE":
+      tap: $$mdi:keyboard-space$$
+      hold: $$mdi:mouse$$
+    "&lt 6 ENTER":
+      tap: $$mdi:keyboard-return$$
+      hold: Num
+    "&lt 4 RETURN":
+      tap: $$mdi:keyboard-return$$
+      hold: Fn
+    "&lt 7 DELETE":
+      tap: Del
+      hold: Sym
+
+    # Mod-morph
+    "&back_del":
+      type: backspace
+      tap: $$mdi:backspace$$
+      shifted: $$mdi:backspace-reverse-outline$$
+
+    # Mouse
+    "&msc SCRL_UP": $$mdi:pan-up$$
+    "&msc SCRL_DOWN": $$mdi:pan-down$$
+    "&mmv MOVE_LEFT": $$mdi:menu-left$$
+    "&mmv MOVE_RIGHT": $$mdi:menu-right$$
+    "&mmv MOVE_UP": $$mdi:menu-up$$
+    "&mmv MOVE_DOWN": $$mdi:menu-down$$
+    "&mkp LCLK": $$mdi:mouse-left-click-outline$$
+    "&mkp RCLK": $$mdi:mouse-right-click-outline$$
+    "&mkp MCLK": $$mdi:mouse-scroll-wheel$$
+    "&mkp MB3": $$mdi:mouse-scroll-wheel$$
+    "&msc SCRL_LEFT": $$mdi:pan-left$$
+    "&msc SCRL_RIGHT": $$mdi:pan-right$$
+
+    # None
+    "&none":
+      tap: $$mdi:minus-circle-outline$$
+      type: none
+
+    # Reset
+    "&sys_reset": $$mdi:backup-restore$$
+    "&bootloader": $$mdi:progress-download$$
+
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: { tap: "=", shifted: "+" }
+    PLUS: +
+    MINUS: { tap: "-", shifted: "_" }
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: { tap: "/", shifted: "?" }
+    FSLH: { tap: "/", shifted: "?" }
+    BACKSLASH: { tap: '\', shifted: "|" }
+    BSLH: { tap: '\', shifted: "|" }
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    SEMICOLON: { tap: ";", shifted: ":" }
+    SEMI: { tap: ";", shifted: ":" }
+    SINGLE_QUOTE: { tap: "'", shifted: '"' }
+    SQT: { tap: "'", shifted: '"' }
+    LESS_THAN: <
+    LT: <
+    PERIOD: '.'
+    DOT: { tap: ".", shifted: ">" }
+    COMMA: { tap: ",", shifted: "<" }
+    LEFT_BRACKET: { tap: "[", shifted: "{" }
+    LBKT: { tap: "[", shifted: "{" }
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET: { tap: "]", shifted: "}" }
+    RBKT: { tap: "]", shifted: "}" }
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE: { tap: "`", shifted: "~" }
+    TILDE: "~"
+
+    # Numbers
+    N1: { tap: 1, shifted: "!" }
+    N2: { tap: 2, shifted: "@" }
+    N3: { tap: 3, shifted: "#" }
+    N4: { tap: 4, shifted: "$" }
+    N5: { tap: 5, shifted: "%" }
+    N6: { tap: 6, shifted: "^" }
+    N7: { tap: 7, shifted: "&" }
+    N8: { tap: 8, shifted: "*" }
+    N9: { tap: 9, shifted: "(" }
+    N0: { tap: 0, shifted: ")" }
+    NUMBER_1: { tap: 1, shifted: "!" }
+    NUMBER_2: { tap: 2, shifted: "@" }
+    NUMBER_3: { tap: 3, shifted: "#" }
+    NUMBER_4: { tap: 4, shifted: "$" }
+
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LG: $$mdi:apple-keyboard-command$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RG: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+
+    # Arrows
+    UP: $$mdi:arrow-up-bold$$
+    UP_ARROW: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    DOWN_ARROW: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    LEFT_ARROW: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    RIGHT_ARROW: $$mdi:arrow-right-bold$$
+
+    # Whitespace
+    ENTER: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    ESCAPE: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: { type: backspace, tap: $$mdi:backspace$$ }
+    BSPC: { type: backspace, tap: $$mdi:backspace$$ }
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # Sound
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    C_VOLUME_UP: $$mdi:volume-high$$
+    C_VOLUME_DOWN: $$mdi:volume-low$$
+
+    # Function keys
+    F1: F1
+    F2: F2
+    F3: F3
+    F4: F4
+    F5: F5
+    F6: F6
+    F7: F7
+    F8: F8
+    F9: F9
+    F10: F10
+    F11: F11
+    F12: F12
+
+    # System
+    PRINTSCREEN: $$mdi:printer-outline$$
+    SCROLLLOCK: $$mdi:scroll-text-outline$$
+    PAUSE_BREAK: $$mdi:pause-circle-outline$$
+    INSERT: $$mdi:keyboard-insert$$
+    HOME: $$mdi:home-outline$$
+    PG_UP: $$mdi:page-next-outline$$
+    END: $$mdi:page-last-outline$$
+    PG_DN: $$mdi:page-previous-outline$$
+
+  zmk_combos:
+    combo_backslash:
+      key:
+        shifted: "|"
+        hold: '\'
