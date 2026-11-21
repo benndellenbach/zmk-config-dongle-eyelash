@@ -234,7 +234,7 @@
                        &lt SYM TAB  &lt MOUSE SPACE  &lt NUM ENTER                &lt FN RETURN  &lt MOUSE SPACE  &back_del
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         full_layer {
@@ -246,7 +246,7 @@
                                 &lt SYM DELETE  &lt MOUSE SPACE  &lt NUM ENTER                        &lt FN RETURN  &lt MOUSE SPACE  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         colemak_dh_layer {
@@ -258,7 +258,7 @@
                        &lt SYM TAB  &lt MOUSE SPACE  &lt NUM ENTER                &lt FN RETURN  &lt MOUSE SPACE  &back_del
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         mouse_layer {
@@ -326,7 +326,7 @@
             bindings = <
 &none  &out OUT_USB   &out OUT_TOG   &out OUT_BLE   &none          &none                      &none                  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none
 &none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &none  &none  &none          &tog FULL        &tog CDH          &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none
-&none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &none          &to GAME          &none         &none            &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &none            &sys_reset       &bootloader      &none
+&none  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT     &studio_unlock &to GAME          &none         &none            &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &none            &sys_reset       &bootloader      &none
                                      &trans         &trans         &trans                                           &trans           &trans           &trans
             >;
 
