@@ -233,7 +233,7 @@ parse_config:
     INSERT: $$mdi:keyboard-insert$$
     HOME: $$mdi:home-outline$$
     PG_UP: $$mdi:page-next-outline$$
-    END: $$mdi:page-last-outline$$
+    END: $$mdi:page-last$$
     PG_DN: $$mdi:page-previous-outline$$
 
   zmk_combos:
