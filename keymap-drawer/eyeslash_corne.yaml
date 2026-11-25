@@ -15,19 +15,19 @@ layers:
   - P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: LSHFT}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: Win}
+  - {t: S, h: Alt}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
   - G
   - $$mdi:arrow-left-bold$$
   - $$mdi:keyboard-return$$
   - $$mdi:arrow-right-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: RSHFT}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: LGUI, s: ':'}
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
+  - {t: L, h: Alt}
+  - {t: ;, h: Win}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
@@ -64,19 +64,19 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
   - '&td0'
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: LSHFT}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: Win}
+  - {t: S, h: Alt}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
   - G
   - $$mdi:arrow-left-bold$$
   - $$mdi:keyboard-return$$
   - $$mdi:arrow-right-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: RSHFT}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: LGUI, s: ':'}
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
+  - {t: L, h: Alt}
+  - {t: ;, h: Win}
   - {t: '''', h: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -113,19 +113,19 @@ layers:
   - {t: ;, h: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: A, h: LGUI}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: LSHFT}
-  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: Win}
+  - {t: R, h: Alt}
+  - {t: S, h: Shift}
+  - {t: T, h: Ctrl}
   - G
   - $$mdi:arrow-left-bold$$
   - $$mdi:keyboard-return$$
   - $$mdi:arrow-right-bold$$
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: E, h: RSHFT}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: LGUI}
+  - {t: N, h: Ctrl}
+  - {t: E, h: Shift}
+  - {t: I, h: Alt}
+  - {t: O, h: Win}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
