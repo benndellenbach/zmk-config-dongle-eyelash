@@ -71,9 +71,22 @@ G: app switcher (Ctrl+Alt+Tab; pick with the Fn arrows, Enter to open)
 
 G: next match / add cursor (Ctrl+D). Bottom row: Undo, Cut, Copy, Paste, Redo.
 
+## Home row mods (Base5, Full and ColemakDH)
+
+Hold a home row key for a modifier, tap it for the letter. Same order as the Fn and Mouse layers.
+
+| | Pinky | Ring | Middle | Index |
+|---|---|---|---|---|
+| Left (QWERTY / Colemak) | A Win | S / R Alt | D / S Shift | F / T Ctrl |
+| Right (QWERTY / Colemak) | ; / O Win | L / I Alt | K / E Shift | J / N Ctrl |
+
+Timeless settings: a hold only becomes a modifier when the next key is on the other hand (or a thumb, the knob push or the 5-way switch), and never right after typing. Same-hand shortcuts like Ctrl+A use the opposite hand's mod, or the Mouse and Fn layer mods. Tap then hold quickly to repeat a letter.
+
+On QWERTY layers the `;` key no longer holds for `:`. Use Num or Sym (right pinky, home row) for `:`.
+
 ## Combos (Base5, Full and ColemakDH only)
 
-- **Home-row mods (mirrored):** A+S Ctrl, S+D Shift (double-tap for Caps Word), D+F Alt, A+F GUI; L+; Ctrl, K+L Shift, J+K Alt, J+; GUI
+- **Mod combos (kept for the transition):** A+S Ctrl, S+D Shift (double-tap for Caps Word), D+F Alt, A+F GUI; L+; Ctrl, K+L Shift, J+K Alt, J+; GUI
 - **Esc:** Q+W
 - **Brackets:** F+G `(`, H+J `)`, R+T `[`, Y+U `]`, V+B `{`, N+M `}`
 - **Others:** O+P `'` (hold for `"`), `.`+`/` `\`, `,`+`.` `|`
@@ -82,7 +95,7 @@ G: next match / add cursor (Ctrl+D). Bottom row: Undo, Cut, Copy, Paste, Redo.
 
 - **One-shot Shift:** tap the left inner thumb, then the next key comes out shifted. Hold the same key for Num.
 - **Caps Word:** double-tap a Shift combo. Capitals continue until you type a space or punctuation, so `MAX_SIZE` takes one gesture.
-- **Hold for symbols:** hold `,` `.` `/` `;` (or the O+P quote combo) for `<` `>` `?` `:` (`"`). Holds are ignored while you're typing fast, so rolls never misfire.
+- **Hold for symbols:** hold `,` `.` `/` (or the O+P quote combo) for `<` `>` `?` (`"`). On ColemakDH, `;` holds for `:`. Holds are ignored while you're typing fast, so rolls never misfire.
 - **Sym layer, left hand** (hold left outer thumb):
 
   ```
@@ -116,7 +129,7 @@ The 5-way switch works on every layer without holding anything extra.
 
 ## Dependencies
 
-- ZMK v0.3fa
+- ZMK v0.3
 - nice-view-gem v0.3.0 (M165437)
 
 ## Credits
