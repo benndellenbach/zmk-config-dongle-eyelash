@@ -55,8 +55,8 @@ parse_config:
     "&lt 3 SPACE":
       tap: $$mdi:keyboard-space$$
       hold: $$mdi:mouse$$
-    "&lt 6 ENTER":
-      tap: $$mdi:keyboard-return$$
+    "&ht_num_sk 6 LSHFT":
+      tap: 1× shift
       hold: Num
     "&lt 4 RETURN":
       tap: $$mdi:keyboard-return$$
@@ -88,6 +88,19 @@ parse_config:
     "&kp LC(C)": Copy
     "&kp LC(V)": Paste
     "&kp LC(Y)": Redo
+
+    # Game layer: hold or double-tap for GameFn
+    "&td_gfn":
+      tap: 2× lock
+      hold: GameFn
+
+    # Hold-for-symbol keys
+    "&ht_sym COLON SEMI": { tap: ";", hold: ":" }
+    "&ht_sym LESS_THAN COMMA": { tap: ",", hold: "<" }
+    "&ht_sym GREATER_THAN PERIOD": { tap: ".", hold: ">" }
+    "&ht_sym QUESTION SLASH": { tap: "/", hold: "?" }
+    "&ht_sym DOUBLE_QUOTES APOS": { tap: "'", hold: '"' }
+    "&caps_word": Caps word
 
     # Mod-morph
     "&back_del":
@@ -235,6 +248,9 @@ parse_config:
     C_VOL_DN: $$mdi:volume-low$$
     C_VOLUME_UP: $$mdi:volume-high$$
     C_VOLUME_DOWN: $$mdi:volume-low$$
+    C_PP: $$mdi:play-pause$$
+    C_PREV: $$mdi:skip-previous$$
+    C_NEXT: $$mdi:skip-next$$
 
     # Function keys
     F1: F1
