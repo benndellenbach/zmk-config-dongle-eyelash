@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
@@ -20,14 +20,14 @@ layers:
   - D
   - F
   - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-right-bold$$
   - H
   - J
   - K
   - L
-  - {t: ;, h: COLON, s: ':'}
+  - {t: ;, h: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
@@ -35,17 +35,17 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:play-pause$$
+  - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: GREATER THAN}
-  - {t: /, h: QUESTION, s: '?'}
+  - {t: ',', h: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: Sym}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: 1× shift, h: Num}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
@@ -76,8 +76,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: COLON, s: ':'}
-  - {t: APOS, h: DOUBLE QUOTES}
+  - {t: ;, h: ':'}
+  - {t: '''', h: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -88,13 +88,13 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: GREATER THAN}
-  - {t: /, h: QUESTION, s: '?'}
+  - {t: ',', h: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?'}
   - $$mdi:keyboard-esc$$
   - {t: Del, h: Sym}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: 1× shift, h: Num}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -105,12 +105,12 @@ layers:
   - F
   - P
   - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
   - J
   - L
   - U
   - Y
-  - {t: ;, h: COLON, s: ':'}
+  - {t: ;, h: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
@@ -118,9 +118,9 @@ layers:
   - S
   - T
   - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-right-bold$$
   - M
   - N
   - E
@@ -133,17 +133,17 @@ layers:
   - C
   - D
   - V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:play-pause$$
+  - $$mdi:arrow-down-bold$$
   - K
   - H
-  - {t: ',', h: <, s: <}
-  - {t: ., h: GREATER THAN}
-  - {t: /, h: QUESTION, s: '?'}
+  - {t: ',', h: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: Sym}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: 1× shift, h: Num}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
@@ -154,7 +154,7 @@ layers:
   - Find
   - Comment
   - Snip
-  - Ctl+$$mdi:arrow-up-bold$$
+  - $$mdi:pan-up$$
   - Ctl+$$mdi:arrow-up-bold$$
   - '&mkp MB4'
   - $$mdi:menu-up$$
@@ -167,9 +167,9 @@ layers:
   - LSHFT
   - $$mdi:apple-keyboard-control$$
   - Next match
-  - Ctl+$$mdi:arrow-left-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:arrow-right-bold$$
+  - $$mdi:pan-left$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:pan-right$$
   - Ctl+$$mdi:arrow-down-bold$$
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
@@ -183,7 +183,7 @@ layers:
   - Paste
   - Redo
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:arrow-down-bold$$
+  - $$mdi:pan-down$$
   - $$mdi:pan-left$$
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:mouse-scroll-wheel$$
@@ -203,7 +203,7 @@ layers:
   - Prev tab
   - Next tab
   - New tab
-  - $$mdi:menu-up$$
+  - $$mdi:page-next-outline$$
   - $$mdi:page-next-outline$$
   - $$mdi:home-outline$$
   - $$mdi:arrow-up-bold$$
@@ -216,9 +216,9 @@ layers:
   - LSHFT
   - $$mdi:apple-keyboard-control$$
   - Switcher
-  - $$mdi:menu-left$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:menu-right$$
+  - Prev tab
+  - $$mdi:keyboard-return$$
+  - Next tab
   - $$mdi:page-previous-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -231,11 +231,11 @@ layers:
   - Commands
   - Quick open
   - Terminal
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:menu-down$$
-  - PREV
-  - PP
-  - NEXT
+  - $$mdi:volume-off$$
+  - $$mdi:page-previous-outline$$
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -252,7 +252,7 @@ layers:
   - W
   - E
   - R
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
@@ -265,9 +265,9 @@ layers:
   - S
   - D
   - F
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-right-bold$$
   - H
   - J
   - K
@@ -281,14 +281,14 @@ layers:
   - C
   - V
   - {t: Base5, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - GameFn
+  - {t: 2× lock, h: GameFn}
   - $$mdi:keyboard-space$$
   - G
   - $$mdi:keyboard-return$$
@@ -301,7 +301,7 @@ layers:
   - F8
   - F9
   - F12
-  - $$mdi:menu-up$$
+  - $$mdi:arrow-up-bold$$
   - {t: '[', s: '{'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -314,9 +314,9 @@ layers:
   - F5
   - F6
   - F11
-  - $$mdi:menu-left$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:menu-right$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-right-bold$$
   - {t: '=', s: +}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -329,8 +329,8 @@ layers:
   - F2
   - F3
   - F10
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:menu-down$$
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
   - {t: '-', s: _}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -345,12 +345,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Sym:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - F7
-  - F8
-  - F9
-  - F12
-  - $$mdi:menu-up$$
+  - {t: '`', s: '~'}
+  - <
+  - GREATER THAN
+  - {t: '-', s: _}
+  - '|'
+  - $$mdi:arrow-up-bold$$
   - {t: 'Sft+[', s: 'Sft+{'}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+8, s: Sft+*}
@@ -358,14 +358,14 @@ layers:
   - {t: 'Sft+]', s: 'Sft+}'}
   - {t: Sft+`, s: Sft+~}
   - {t: '$$mdi:transfer$$', type: trans}
-  - DOUBLE QUOTES
-  - F4
-  - F5
-  - F6
-  - F11
-  - $$mdi:menu-left$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:menu-right$$
+  - '!'
+  - {t: '=', s: +}
+  - +
+  - _
+  - '&'
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:arrow-right-bold$$
   - {t: Sft+=, s: Sft++}
   - {t: Sft+4, s: Sft+$}
   - {t: Sft+5, s: Sft+%}
@@ -373,13 +373,13 @@ layers:
   - COLON
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F10
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:menu-down$$
+  - '~'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
   - {t: Sft+-, s: Sft+_}
   - {t: Sft+1, s: Sft+!}
   - {t: Sft+2, s: Sft+@}
@@ -399,7 +399,7 @@ layers:
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - BT NXT
   - RGB TOG
   - RGB EFF
   - RGB HUI
@@ -412,9 +412,9 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - OUT USB
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT BLE
   - {t: Full, h: toggle}
   - {t: ColemakDH, h: toggle}
   - RGB HUD
@@ -428,7 +428,7 @@ layers:
   - '&studio_unlock'
   - {t: Game, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - BT PRV
   - RGB SPD
   - RGB SPI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -448,7 +448,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-high$$
   - F1
   - F2
   - F3
@@ -461,9 +461,9 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - F6
   - F7
   - F8
@@ -477,14 +477,14 @@ layers:
   - M
   - I
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
   - F11
   - F12
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - {t: Base5, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-return$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -568,7 +568,7 @@ combos:
   k: '|'
   l: [Base5, Full, ColemakDH]
 - p: [10, 11]
-  k: {t: APOS, h: DOUBLE QUOTES}
+  k: {t: '''', h: '"'}
   l: [Base5, Full, ColemakDH]
 - p: [14, 15]
   k: $$mdi:apple-keyboard-control$$
