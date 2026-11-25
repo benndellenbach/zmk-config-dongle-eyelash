@@ -38,16 +38,38 @@ After changing layers, use **Restore Stock Settings** in ZMK Studio so saved Stu
 | 0 | Base5 | Default: 5-column QWERTY |
 | 1 | Full | System + H toggles the original 6-column layout |
 | 2 | ColemakDH | System + J toggles Colemak-DH |
-| 3 | Mouse | Hold either Space |
-| 4 | Fn | Hold right inner thumb (Return): WASD-style arrows, paging, media |
+| 3 | Mouse | Hold either Space; clicks on both thumb clusters (inner = right click, middle = left click); T = Snipping Tool (Win+Shift+S) |
+| 4 | Fn | Hold right inner thumb (Return): WASD-style arrows, paging, media; browser and editor navigation on the left |
 | 5 | Game | System + B; centre key returns to Base |
 | 6 | Num | Hold left inner thumb (Enter) |
 | 7 | Sym | Hold left outer thumb (Tab) |
-| 8 | System | Hold Num + Fn together: Bluetooth, USB/BLE output, RGB, reset |
+| 8 | System | Hold Num + Fn together: Bluetooth, USB/BLE output, RGB, Studio unlock (V), reset |
 | 9 | GameFn | Hold Game's left outer thumb: number row, F-keys |
-| 10 | Precise | Mouse layer's right outer thumb: slow cursor |
+| 10 | Precise | Mouse layer, either outer thumb: slow cursor |
 
 Game and GameFn use plain keys and `&mo` only, because hold-taps misbehave in most games.
+
+## Shortcuts (Windows)
+
+**Fn layer, left hand** (hold right inner thumb). Home row stays Win / Alt / Shift / Ctrl.
+
+| Q | W | E | R | T |
+|---|---|---|---|---|
+| Reopen tab (Ctrl+Shift+T) | Close tab (Ctrl+W) | Prev tab (Ctrl+Shift+Tab) | Next tab (Ctrl+Tab) | New tab (Ctrl+T) |
+
+G: app switcher (Ctrl+Alt+Tab; pick with the Fn arrows, Enter to open)
+
+| Z | X | C | V | B |
+|---|---|---|---|---|
+| Clipboard history (Win+V) | Address bar (Ctrl+L) | Command palette (Ctrl+Shift+P) | Quick open (Ctrl+P) | Terminal (Ctrl+`) |
+
+**Mouse layer, left hand** (hold either Space):
+
+| Q | W | E | R | T |
+|---|---|---|---|---|
+| Select all (Ctrl+A) | Save (Ctrl+S) | Find (Ctrl+F) | Toggle comment (Ctrl+/) | Snip (Win+Shift+S) |
+
+G: next match / add cursor (Ctrl+D). Bottom row: Undo, Cut, Copy, Paste, Redo.
 
 ## Combos (Base5, Full and ColemakDH only)
 
@@ -58,7 +80,7 @@ Game and GameFn use plain keys and `&mo` only, because hold-taps misbehave in mo
 
 ## Encoder
 
-- **Base layers:** Tab / Shift+Tab
+- **Base5, Full, ColemakDH:** Down / Up arrows
 - **Mouse and Game:** scroll
 - **Fn, Num, Sym, GameFn:** volume
 - **System:** RGB brightness
