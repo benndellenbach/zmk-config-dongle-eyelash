@@ -264,10 +264,10 @@
         mouse_layer {
             display-name = "mouse";
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                                &kp LC(UP_ARROW)                 &kp LC(UP)      &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP     &trans
-&trans  &kp LGUI   &kp LALT   &kp LSHFT  &kp LCTRL  &trans                  &kp LC(LEFT)  &trans            &kp LC(RIGHT)  &kp LC(DOWN)    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN   &none
+&trans  &kp LC(A)  &kp LC(S)  &kp LC(F)  &kp LC(FSLH)  &kp LG(LS(S))                      &kp LC(UP_ARROW)                 &kp LC(UP)      &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP     &trans
+&trans  &kp LGUI   &kp LALT   &kp LSHFT  &kp LCTRL     &kp LC(D)                  &kp LC(LEFT)  &trans            &kp LC(RIGHT)  &kp LC(DOWN)    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN   &none
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)      &trans                  &kp LC(DOWN)                     &msc SCRL_LEFT  &kp LC(LEFT)    &mkp MB3        &kp LC(RIGHT)    &msc SCRL_RIGHT  &none
-                              &trans        &trans     &trans                                                                  &mkp RCLK       &mkp LCLK       &mo PREC
+                              &mo PREC      &mkp LCLK  &mkp RCLK                                                               &mkp RCLK       &mkp LCLK       &mo PREC
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -276,10 +276,10 @@
         fn_layer {
             display-name = "fn";
             bindings = <
-&trans  &trans     &trans    &trans     &trans     &trans                                &mmv MOVE_UP                     &kp PG_UP   &kp HOME  &kp UP    &kp END    &kp C_VOL_UP  &trans
-&trans  &kp LGUI   &kp LALT  &kp LSHFT  &kp LCTRL  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PG_DN   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOL_DN  &trans
-&trans  &trans     &trans    &trans     &trans     &trans       &trans                    &mmv MOVE_DOWN                   &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &trans       &trans
-                                &trans  &trans  &trans                                                           &trans      &trans    &trans
+&trans  &kp LC(LS(T))  &kp LC(W)     &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)                          &mmv MOVE_UP                     &kp PG_UP   &kp HOME  &kp UP      &kp END    &kp C_VOL_UP  &trans
+&trans  &kp LGUI       &kp LALT      &kp LSHFT        &kp LCTRL    &kp LC(LA(TAB))    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PG_DN   &kp LEFT  &kp DOWN    &kp RIGHT  &kp C_VOL_DN  &trans
+&trans  &kp LG(V)      &kp LC(L)     &kp LC(LS(P))    &kp LC(P)    &kp LC(GRAVE)      &trans          &mmv MOVE_DOWN                   &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &trans        &trans
+                                     &trans           &trans       &trans                                                              &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
