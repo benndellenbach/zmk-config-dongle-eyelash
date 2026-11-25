@@ -41,10 +41,10 @@ After changing layers, use **Restore Stock Settings** in ZMK Studio so saved Stu
 | 3 | Mouse | Hold either Space; clicks on both thumb clusters (inner = right click, middle = left click); T = Snipping Tool (Win+Shift+S) |
 | 4 | Fn | Hold right inner thumb (Return): WASD-style arrows, paging, media; browser and editor navigation on the left |
 | 5 | Game | System + B; centre key returns to Base |
-| 6 | Num | Hold left inner thumb (Enter) |
-| 7 | Sym | Hold left outer thumb (Tab) |
+| 6 | Num | Hold left inner thumb (tap = one-shot Shift) |
+| 7 | Sym | Hold left outer thumb (Tab): coding symbols on the left, shifted numbers on the right |
 | 8 | System | Hold Num + Fn together: Bluetooth, USB/BLE output, RGB, Studio unlock (V), reset |
-| 9 | GameFn | Hold Game's left outer thumb: number row, F-keys |
+| 9 | GameFn | Game's left outer thumb: hold to use, or double-tap to lock on (double-tap again to unlock): number row, F-keys |
 | 10 | Precise | Mouse layer, either outer thumb: slow cursor |
 
 Game and GameFn use plain keys and `&mo` only, because hold-taps misbehave in most games.
@@ -73,10 +73,39 @@ G: next match / add cursor (Ctrl+D). Bottom row: Undo, Cut, Copy, Paste, Redo.
 
 ## Combos (Base5, Full and ColemakDH only)
 
-- **Home-row mods (mirrored):** A+S Ctrl, S+D Shift (double-tap Caps Lock), D+F Alt, A+F GUI; L+; Ctrl, K+L Shift, J+K Alt, J+; GUI
+- **Home-row mods (mirrored):** A+S Ctrl, S+D Shift (double-tap for Caps Word), D+F Alt, A+F GUI; L+; Ctrl, K+L Shift, J+K Alt, J+; GUI
 - **Esc:** Q+W
 - **Brackets:** F+G `(`, H+J `)`, R+T `[`, Y+U `]`, V+B `{`, N+M `}`
 - **Others:** O+P `'` (hold for `"`), `.`+`/` `\`, `,`+`.` `|`
+
+## Typing helpers
+
+- **One-shot Shift:** tap the left inner thumb, then the next key comes out shifted. Hold the same key for Num.
+- **Caps Word:** double-tap a Shift combo. Capitals continue until you type a space or punctuation, so `MAX_SIZE` takes one gesture.
+- **Hold for symbols:** hold `,` `.` `/` `;` (or the O+P quote combo) for `<` `>` `?` `:` (`"`). Holds are ignored while you're typing fast, so rolls never misfire.
+- **Sym layer, left hand** (hold left outer thumb):
+
+  ```
+  `  <  >  -  |
+  !  =  +  _  &
+  ~  #  $  %  ^
+  ```
+- **Thumb repeat:** tap then hold Space, Enter or Tab to repeat it; a plain hold still opens the layer.
+
+## 5-way switch and knob push
+
+The 5-way switch works on every layer without holding anything extra.
+
+| Layer | Up / Down | Left / Right | Press | Knob push |
+|---|---|---|---|---|
+| Base5, ColemakDH | Arrows | Arrows | Enter | Play/Pause |
+| Full | Arrows | Arrows | Enter | Switch to Game |
+| Mouse | Scroll | Scroll sideways | Middle click | Play/Pause |
+| Fn | Page Up / Down | Previous / next tab | Enter | Mute |
+| Num, Sym | Arrows | Arrows | Enter | Mute |
+| Game | Arrows | Arrows | Enter | Back to typing |
+| GameFn | Volume up / down | Previous / next track | Play/Pause | Back to typing |
+| System | Bluetooth next / previous | USB / Bluetooth output | Nothing | Nothing |
 
 ## Encoder
 
@@ -87,7 +116,7 @@ G: next match / add cursor (Ctrl+D). Bottom row: Undo, Cut, Copy, Paste, Redo.
 
 ## Dependencies
 
-- ZMK v0.3
+- ZMK v0.3fa
 - nice-view-gem v0.3.0 (M165437)
 
 ## Credits
