@@ -149,11 +149,11 @@ layers:
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
   mouse:
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+A
-  - Ctl+S
-  - Ctl+F
-  - {t: Ctl+/, s: 'Ctl+?'}
-  - Gui+Sft+S
+  - Select all
+  - Save
+  - Find
+  - Comment
+  - Snip
   - Ctl+$$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-up-bold$$
   - '&mkp MB4'
@@ -166,7 +166,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LSHFT
   - $$mdi:apple-keyboard-control$$
-  - Ctl+D
+  - Next match
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-right-bold$$
@@ -177,11 +177,11 @@ layers:
   - $$mdi:pan-down$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
+  - Undo
+  - Cut
+  - Copy
+  - Paste
+  - Redo
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
   - $$mdi:pan-left$$
@@ -198,11 +198,11 @@ layers:
   - Precise
   fn:
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+T
-  - Ctl+W
-  - Ctl+Sft+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:keyboard-tab$$
-  - Ctl+T
+  - Reopen tab
+  - Close tab
+  - Prev tab
+  - Next tab
+  - New tab
   - $$mdi:menu-up$$
   - $$mdi:page-next-outline$$
   - $$mdi:home-outline$$
@@ -215,7 +215,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LSHFT
   - $$mdi:apple-keyboard-control$$
-  - Ctl+Alt+$$mdi:keyboard-tab$$
+  - Switcher
   - $$mdi:menu-left$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:menu-right$$
@@ -226,11 +226,11 @@ layers:
   - $$mdi:volume-low$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+V
-  - Ctl+L
-  - Ctl+Sft+P
-  - Ctl+P
-  - {t: Ctl+`, s: Ctl+~}
+  - Clipboard
+  - Address
+  - Commands
+  - Quick open
+  - Terminal
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:menu-down$$
   - PREV
