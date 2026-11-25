@@ -94,8 +94,25 @@ parse_config:
       tap: 2× lock
       hold: GameFn
 
+    # Home row mods
+    "&hml LGUI A": { tap: "A", hold: Win }
+    "&hml LALT S": { tap: "S", hold: Alt }
+    "&hml LSHFT D": { tap: "D", hold: Shift }
+    "&hml LCTRL F": { tap: "F", hold: Ctrl }
+    "&hml LALT R": { tap: "R", hold: Alt }
+    "&hml LSHFT S": { tap: "S", hold: Shift }
+    "&hml LCTRL T": { tap: "T", hold: Ctrl }
+    "&hmr RCTRL J": { tap: "J", hold: Ctrl }
+    "&hmr RSHFT K": { tap: "K", hold: Shift }
+    "&hmr LALT L": { tap: "L", hold: Alt }
+    "&hmr LGUI SEMI": { tap: ";", hold: Win }
+    "&hmr RCTRL N": { tap: "N", hold: Ctrl }
+    "&hmr RSHFT E": { tap: "E", hold: Shift }
+    "&hmr LALT I": { tap: "I", hold: Alt }
+    "&hmr LGUI O": { tap: "O", hold: Win }
+
     # Hold-for-symbol keys
-    "&ht_sym COLON SEMI": { tap: ";", hold: ":" }
+    "&ht_sym COLON SEMI": { tap: ";", hold: ":" }   # ColemakDH top row only
     "&ht_sym LESS_THAN COMMA": { tap: ",", hold: "<" }
     "&ht_sym GREATER_THAN PERIOD": { tap: ".", hold: ">" }
     "&ht_sym QUESTION SLASH": { tap: "/", hold: "?" }
@@ -281,3 +298,4 @@ parse_config:
       key:
         shifted: "|"
         hold: '\'
+      
