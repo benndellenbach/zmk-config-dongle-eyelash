@@ -65,6 +65,30 @@ parse_config:
       tap: Del
       hold: Sym
 
+    # Shortcuts (Fn and Mouse layers)
+    "&kp LC(LS(T))": Reopen tab
+    "&kp LC(W)": Close tab
+    "&kp LC(LS(TAB))": Prev tab
+    "&kp LC(TAB)": Next tab
+    "&kp LC(T)": New tab
+    "&kp LC(LA(TAB))": Switcher
+    "&kp LG(V)": Clipboard
+    "&kp LC(L)": Address
+    "&kp LC(LS(P))": Commands
+    "&kp LC(P)": Quick open
+    "&kp LC(GRAVE)": Terminal
+    "&kp LC(A)": Select all
+    "&kp LC(S)": Save
+    "&kp LC(F)": Find
+    "&kp LC(FSLH)": Comment
+    "&kp LC(D)": Next match
+    "&kp LG(LS(S))": Snip
+    "&kp LC(Z)": Undo
+    "&kp LC(X)": Cut
+    "&kp LC(C)": Copy
+    "&kp LC(V)": Paste
+    "&kp LC(Y)": Redo
+
     # Mod-morph
     "&back_del":
       type: backspace
