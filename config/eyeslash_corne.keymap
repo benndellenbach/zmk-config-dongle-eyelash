@@ -1,4 +1,260 @@
-keymap {
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 12
+
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
+
+#define BASE 0
+#define FULL 1
+#define CDH 2
+#define MOUSE 3
+#define FN 4
+#define GAME 5
+#define NUM 6
+#define SYM 7
+#define SYS 8
+#define GFN 9
+#define PREC 10
+
+&mmv_input_listener {
+    input-processors = <&zip_xy_scaler 1 1>;
+
+    precise {
+        layers = <PREC>;
+        input-processors = <&zip_xy_scaler 1 3>;
+    };
+};
+
+&msc_input_listener { input-processors = <&zip_scroll_scaler 1 1>; };
+
+// Tap then hold a thumb key to repeat its tap (Space, Enter, Tab) instead of opening its layer
+&lt { quick-tap-ms = <175>; };
+
+&msc {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <350>;
+    delay-ms = <0>;
+};
+
+&mmv {
+    time-to-max-speed-ms = <400>;
+    acceleration-exponent = <2>;
+    delay-ms = <0>;
+    trigger-period-ms = <16>;
+};
+
+/ {
+    behaviors {
+        back_del: back_del {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        };
+
+        enc_scroll: enc_scroll {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_HWHEEL>;
+            y-input-code = <INPUT_REL_WHEEL>;
+            time-to-max-speed-ms = <300>;
+            acceleration-exponent = <0>;
+        };
+
+        // Hold-for-symbol on comma, period, slash, semicolon and the quote combo. Prefers the tap
+        // and ignores holds while typing fast, so quick rolls stay plain commas and periods
+        ht_sym: ht_sym {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // Left inner thumb: hold = Num layer, tap = one-shot Shift (capitalizes the next key)
+        ht_num_sk: ht_num_sk {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sk>;
+        };
+
+        // Game layer left outer thumb: hold = GameFn while held, double-tap = GameFn stays on
+        // (double-tap again to turn it off)
+        td_gfn: td_gfn {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&mo GFN>, <&tog GFN>;
+        };
+    };
+
+    rgb_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    };
+
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&enc_scroll SCRL_DOWN>, <&enc_scroll SCRL_UP>;
+
+        tap-ms = <100>;
+    };
+
+    enc_scroll_listener {
+        compatible = "zmk,input-listener";
+        device = <&enc_scroll>;
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        sys_combo_layer {
+            if-layers = <FN NUM>;
+            then-layer = <SYS>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_leftLP {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <17 18>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_rightPT {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 23>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_leftBR {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <32 33>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_rightBR {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <36 37>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_leftBT {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <4 5>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_rightBT {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <39 40>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <38 39>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_quote {
+            bindings = <&ht_sym DOUBLE_QUOTES APOS>;
+            key-positions = <10 11>;
+            layers = <BASE FULL CDH>;
+            require-prior-idle-ms = <150>;
+        };
+
+        LeftControl {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 15>;
+            layers = <BASE FULL CDH>;
+        };
+
+        LeftShift {
+            bindings = <&td0>;
+            key-positions = <15 16>;
+            layers = <BASE FULL CDH>;
+        };
+
+        LeftAlt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 17>;
+            layers = <BASE FULL CDH>;
+        };
+
+        LeftGUI {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <14 17>;
+            layers = <BASE FULL CDH>;
+        };
+
+        RightShift {
+            bindings = <&td0>;
+            key-positions = <24 25>;
+            layers = <BASE FULL CDH>;
+        };
+
+        RightControl {
+            bindings = <&kp RCTRL>;
+            key-positions = <25 26>;
+            layers = <BASE FULL CDH>;
+        };
+
+        RightAlt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <23 24>;
+            layers = <BASE FULL CDH>;
+        };
+
+        RightGUI {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <23 26>;
+            layers = <BASE FULL CDH>;
+        };
+    };
+
+    keymap {
         compatible = "zmk,keymap";
 
         base5_layer {
