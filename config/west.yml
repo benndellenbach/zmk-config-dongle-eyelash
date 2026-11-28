@@ -4,8 +4,9 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: m165437
           url-base: https://github.com/M165437
-        - name: prospector
-          url-base: https://github.com/t-ogura
+        # Your fork (benndellenbach/prospector-zmk-module), with the Tandem patch (reports USB or Bluetooth output).
+        - name: tandem
+          url-base: https://github.com/benndellenbach
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -14,9 +15,10 @@ manifest:
         - name: nice-view-gem
           remote: m165437
           revision: v0.3.0
+        # Branch tandem in your fork: made from tag v2.2.3, plus the 6 line patch.
         - name: prospector-zmk-module
-          remote: prospector
-          revision: v2.2.3
+          remote: tandem
+          revision: tandem
           path: modules/prospector-zmk-module
     self:
         path: config
