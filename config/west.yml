@@ -4,6 +4,8 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: m165437
           url-base: https://github.com/M165437
+        - name: prospector
+          url-base: https://github.com/t-ogura
     projects:
         - name: zmk
           remote: zmkfirmware
@@ -12,5 +14,9 @@ manifest:
         - name: nice-view-gem
           remote: m165437
           revision: v0.3.0
+        - name: prospector-zmk-module
+          remote: prospector
+          revision: v2.2.3
+          path: modules/prospector-zmk-module
     self:
         path: config
